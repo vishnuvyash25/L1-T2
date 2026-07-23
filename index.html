@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura AI - Generative 3D Spatial Computing Engine</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Generate immersive 3D worlds, environments, and game-ready assets instantly using plain text. Experience the future of spatial computing with Aura AI.">
+  <meta name="keywords" content="AI, 3D Generator, Spatial Computing, Game Assets, Generative AI, 3D modeling, VR, AR">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Elements -->
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-bottom-left"></div>
+  <div class="ambient-glow glow-center"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <div class="container">
+      <a href="#" class="logo" id="nav-logo">
+        <span class="logo-icon"></span>
+        AURA AI
+      </a>
+      <nav>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#sandbox" class="nav-link">Playground</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#sandbox" class="btn btn-primary btn-small" id="header-cta-btn">Launch Sandbox</a>
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-menu">
+    <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close Navigation Menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="mobile-nav-links">
+      <li><a href="#features" class="mobile-link">Features</a></li>
+      <li><a href="#how-it-works" class="mobile-link">How it Works</a></li>
+      <li><a href="#sandbox" class="mobile-link">Playground</a></li>
+      <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+      <li><a href="#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="#sandbox" class="btn btn-primary mobile-link" style="margin-top: 1rem;">Launch Sandbox</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="grid-overlay"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-tag">
+            <span></span> World Builder Beta v2.4
+          </div>
+          <h1>Generate Entire <span>3D Worlds</span> with Simple Text</h1>
+          <p>Aura AI is the industry's first generative model built specifically for spatial computing. Construct textured, light-baked environments and asset packages in seconds.</p>
+          <div class="hero-actions">
+            <a href="#sandbox" class="btn btn-primary" id="hero-primary-cta">Try Playground <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#how-it-works" class="btn btn-secondary" id="hero-secondary-cta">Watch Concept</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-2">
+          <div class="hero-image-wrapper">
+            <!-- Premium generated sphere graphics -->
+            <img src="assets/hero.png" alt="Aura AI Generative Orb" class="hero-img">
+          </div>
+          <!-- Interactive Floating HUD Widgets -->
+          <div class="floating-card floating-card-1">
+            <div class="floating-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="floating-card-text">
+              <div>Rendering Speed</div>
+              <div>0.4s Generation</div>
+            </div>
+          </div>
+          <div class="floating-card floating-card-2">
+            <div class="floating-icon"><i class="fa-solid fa-cubes"></i></div>
+            <div class="floating-card-text">
+              <div>Output Format</div>
+              <div>Universal USDz / glTF</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 id="stat-worlds">500K+</h3>
+          <p>Environments Built</p>
+        </div>
+        <div class="stat-item">
+          <h3 id="stat-creators">40K+</h3>
+          <p>Active Creators</p>
+        </div>
+        <div class="stat-item">
+          <h3 id="stat-latency">92%</h3>
+          <p>Time Saved</p>
+        </div>
+        <div class="stat-item">
+          <h3 id="stat-uptime">99.9%</h3>
+          <p>API Uptime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Features</span>
+        <h2>Infinite Creative Superpowers</h2>
+        <p>Aura AI handles the heavy lifting of geometric modeling, UV unwrapping, and material creation so you can focus on building experiences.</p>
+      </div>
+      <div class="features-grid">
+        <div class="glass-panel feature-card reveal">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <h3>AI Prompt-to-Mesh</h3>
+          <p>Type any description of a 3D asset or landscape and watch Aura generate watertight meshes with optimized polycounts in real-time.</p>
+        </div>
+        <div class="glass-panel feature-card reveal delay-1">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </div>
+          <h3>Smart Material Node</h3>
+          <p>Automatically applies high-resolution PBR textures, standard roughness maps, normals, and ambient occlusion parameters to match your style.</p>
+        </div>
+        <div class="glass-panel feature-card reveal delay-2">
+          <div class="feature-icon-wrapper">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+          </div>
+          <h3>Multi-Engine Export</h3>
+          <p>Seamlessly export your generated worlds into Unreal Engine, Unity, Blender, or WebGL with pre-configured materials ready to go.</p>
+        </div>
+      </div>
+
+      <!-- Columns Demonstration Showcase -->
+      <div class="feature-showcase">
+        <div class="showcase-content reveal">
+          <h3>Designed for Next-Gen Spatial Computing</h3>
+          <p>Whether you're developing high-fidelity games, immersive VR environments, or mixed reality applications for spatial headsets, Aura AI provides responsive, scalable tools.</p>
+          <div class="showcase-features">
+            <div class="showcase-feature-item">
+              <div class="showcase-check"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h4>Optimized Topology</h4>
+                <p>Meshes are created with clean quad structures, making them easy to edit and modify inside modeling packages.</p>
+              </div>
+            </div>
+            <div class="showcase-feature-item">
+              <div class="showcase-check"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <h4>Consistent Global Illumination</h4>
+                <p>Optionally bake lighting configurations and ambient shadows directly into texture maps for immediate setup.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase-visual reveal delay-2">
+          <img src="assets/feature-1.png" alt="Generative 3D Dashboard UI" class="showcase-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="steps">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Process</span>
+        <h2>How Aura Generates Worlds</h2>
+        <p>Three simple phases from text prompt to deploying fully realized 3D asset components into your project pipeline.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">1</div>
+          <h3>Describe Environment</h3>
+          <p>Type in your desired world conditions, weather, architectural details, and general mood parameters.</p>
+        </div>
+        <div class="step-card reveal delay-1">
+          <div class="step-number">2</div>
+          <h3>Configure Style</h3>
+          <p>Choose styling options ranging from photo-realism, stylized low-poly, pixel art, or anime textures.</p>
+        </div>
+        <div class="step-card reveal delay-2">
+          <div class="step-number">3</div>
+          <h3>Export & Launch</h3>
+          <p>Download structured packages complete with normal maps, height maps, and objects instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Sandbox Playground Section -->
+  <section id="sandbox" class="sandbox">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Playground</span>
+        <h2>Interactive Concept Sandbox</h2>
+        <p>Test out a mock generation process. Pick one of the sample prompt tags below or type your own concept, then hit generate to witness the loading flow.</p>
+      </div>
+      <div class="glass-panel sandbox-wrapper reveal">
+        <div class="sandbox-container">
+          <div class="sandbox-input-zone">
+            <input type="text" id="sandbox-input" placeholder="Type a prompt (e.g. Cyberpunk street in Tokyo after rain, neon glowing lights)..." value="Cyberpunk street in Tokyo after rain, neon glowing lights">
+            <button class="btn btn-primary btn-small" id="sandbox-btn">Generate mesh</button>
+          </div>
+          <div class="sandbox-suggestions">
+            <span class="suggestion-tag" data-prompt="Ancient temple hidden in a green misty jungle, mossy ruins">Ancient Temple</span>
+            <span class="suggestion-tag" data-prompt="Futuristic base station on planet Mars, dome buildings, red dust storm">Mars Station</span>
+            <span class="suggestion-tag" data-prompt="Fantasy fairy treehouse in a glowing forest, fireflies, magical theme">Fairy Treehouse</span>
+            <span class="suggestion-tag" data-prompt="Retro neon synthwave highway, grids, wireframes, digital sunset">Synthwave Highway</span>
+          </div>
+
+          <div class="sandbox-preview-screen" id="preview-screen">
+            <!-- State 1: Placeholder -->
+            <div class="sandbox-placeholder" id="sandbox-state-placeholder">
+              <div class="sandbox-placeholder-icon"><i class="fa-solid fa-cube"></i></div>
+              <h4>Aura Generative Sandbox Ready</h4>
+              <p>Type a custom description above and click "Generate Mesh" to run the pipeline mock-up.</p>
+            </div>
+
+            <!-- State 2: Loader -->
+            <div class="sandbox-loader" id="sandbox-state-loader">
+              <div class="spinner"></div>
+              <h4>Synthesizing Geometric Meshes...</h4>
+              <div class="progress-bar-container">
+                <div class="progress-bar" id="generator-progress"></div>
+              </div>
+              <p id="loader-status-text">Parsing prompt tokens...</p>
+            </div>
+
+            <!-- State 3: Output Display -->
+            <div class="sandbox-output" id="sandbox-state-output">
+              <div class="sandbox-output-content">
+                <span class="output-tag" id="output-badge-style">Stylized 3D</span>
+                <h3 class="output-prompt" id="output-prompt-name">Cyberpunk Tokyo street after rain</h3>
+                <div class="output-meta">
+                  <span><i class="fa-regular fa-clock"></i> <label id="output-val-time">0.82s</label></span>
+                  <span><i class="fa-solid fa-border-all"></i> 124k polygons</span>
+                  <span><i class="fa-solid fa-check-double"></i> PBR Textures Baked</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Pricing</span>
+        <h2>Flexible Pricing Tiers</h2>
+        <p>Aura fits both solo developers crafting small indie titles and larger enterprise studios standardizing production pipelines.</p>
+      </div>
+
+      <div class="pricing-toggle-container reveal">
+        <span class="pricing-label active" id="label-monthly">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="billing-switcher" aria-label="Toggle annual billing discount">
+          <span class="slider"></span>
+        </label>
+        <span class="pricing-label" id="label-yearly">Yearly</span>
+        <span class="save-badge">Save 20%</span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1: Starter -->
+        <div class="glass-panel pricing-card reveal">
+          <h3>Starter</h3>
+          <p class="pricing-desc">Perfect for testing Aura AI and beginning visual asset prototyping.</p>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" id="price-starter">0</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> 15 Generations per month</li>
+            <li><i class="fa-solid fa-circle-check"></i> Standard OBJ export format</li>
+            <li><i class="fa-solid fa-circle-check"></i> Community support forums</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> PBR Texture map backing</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Enterprise REST API Access</li>
+          </ul>
+          <a href="#sandbox" class="btn btn-secondary">Get Started</a>
+        </div>
+
+        <!-- Tier 2: Pro (Featured) -->
+        <div class="glass-panel pricing-card featured reveal delay-1">
+          <h3>Creator Pro</h3>
+          <p class="pricing-desc">Ideal for professional indie game builders and digital designers.</p>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" id="price-pro">49</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> Unlimited 3D Mesh generations</li>
+            <li><i class="fa-solid fa-circle-check"></i> glTF, USDz, and FBX exports</li>
+            <li><i class="fa-solid fa-circle-check"></i> High-resolution baked materials</li>
+            <li><i class="fa-solid fa-circle-check"></i> Access to custom style configurations</li>
+            <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Dedicated account server node</li>
+          </ul>
+          <a href="#sandbox" class="btn btn-primary">Start Pro Free Trial</a>
+        </div>
+
+        <!-- Tier 3: Enterprise -->
+        <div class="glass-panel pricing-card reveal delay-2">
+          <h3>Studio Max</h3>
+          <p class="pricing-desc">For larger development teams needing customized AI pipelines and integrations.</p>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" id="price-enterprise">199</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features-list">
+            <li><i class="fa-solid fa-circle-check"></i> High priority generation servers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Full API & SDK script libraries</li>
+            <li><i class="fa-solid fa-circle-check"></i> Dedicated model fine-tuning settings</li>
+            <li><i class="fa-solid fa-circle-check"></i> Commercial copyright assurance</li>
+            <li><i class="fa-solid fa-circle-check"></i> Dedicated support account manager</li>
+          </ul>
+          <a href="#sandbox" class="btn btn-secondary">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">Testimonials</span>
+        <h2>Approved by Real Creators</h2>
+        <p>Indie game studios and virtual landscape designers share their experience integrating Aura into their visual development loops.</p>
+      </div>
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="glass-panel testimonial-card reveal">
+          <div class="stars-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Creating low-poly stylized props for my mobile game used to take hours of manual box modeling. Aura gets me 90% of the way in 30 seconds."</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Sarah Chen</h4>
+              <p>Solo Game Dev, PixelForge</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="glass-panel testimonial-card reveal delay-1">
+          <div class="stars-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The PBR texturing results are phenomenal. I was skeptical of AI mesh generators, but the quad topology and clean UV mapping are very impressive."</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Marcus Thorne</h4>
+              <p>Senior 3D Artist, Nebula Interactive</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="glass-panel testimonial-card reveal delay-2">
+          <div class="stars-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">"We use Aura AI's API endpoints to let users design custom items directly inside our mixed reality app. It scales incredibly well and runs seamlessly."</p>
+          <div class="testimonial-author">
+            <div class="author-info">
+              <h4>Elena Rostova</h4>
+              <p>CTO, SpatialWorld Corp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="tag">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Got questions about pricing models, mesh structures, or legal commercial rights? We've got answers.</p>
+      </div>
+      <div class="faq-wrapper">
+        <!-- FAQ 1 -->
+        <div class="glass-panel faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            <span>Are the generated 3D meshes ready for commercial production?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All meshes generated on our Creator Pro or Studio Max plan are owned entirely by you, complete with full commercial usage rights. The models can be included in shipped indie games, advertisements, or public platforms.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-panel faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Which 3D formats are supported during export?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We support multiple universal file extensions, including glTF (.gltf / .glb), USDz (for iOS and Apple Vision platforms), FBX, and standard OBJ format meshes. Material directories are packed in standard zip layouts.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-panel faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Does Aura generate animations or rigging structures?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Currently, Aura specializes in generating static structural environments, terrain grids, architecture blocks, and static props. Dynamic character rigging and bone structures are planned for our next version releases.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-panel faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I fine-tune the model with my own visual art styles?</span>
+            <i class="fa-solid fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Under the Studio Max enterprise plan, you can upload a training set of high-quality 3D assets to train a private checkpoint node, ensuring output designs match your project's distinct aesthetic signature.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="glass-panel cta-banner-card reveal">
+        <h2>Unleash Your Spatial Imagination</h2>
+        <p>Start constructing customized digital environments instantly. No complex modeling courses or software license fees required.</p>
+        <div class="cta-actions">
+          <a href="#sandbox" class="btn btn-primary" id="cta-banner-primary">Try Creator Sandbox</a>
+          <a href="#pricing" class="btn btn-secondary" id="cta-banner-secondary">View Subscription Tiers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon"></span>
+            AURA AI
+          </a>
+          <p>The generative standard for games, virtual production, and mixed-reality application components.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Aura AI Twitter profile"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="Aura AI Discord server"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="social-icon" aria-label="Aura AI GitHub profile"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Aura AI YouTube channel"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul class="footer-links">
+            <li><a href="#features">AI Texturing</a></li>
+            <li><a href="#features">Mesh Generator</a></li>
+            <li><a href="#pricing">Pricing Models</a></li>
+            <li><a href="#sandbox">Sandbox Engine</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">API Documentation</a></li>
+            <li><a href="#">SDK Libraries</a></li>
+            <li><a href="#">Discord Community</a></li>
+            <li><a href="#">Tutorial Guides</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press Kit</a></li>
+            <li><a href="#">Career Openings</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter subscription -->
+        <div class="footer-newsletter">
+          <h4>Subscribe to Updates</h4>
+          <p>Get notified about our latest spatial updates, model checkpoints, and community asset packs.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Newsletter email address">
+            <button type="submit" class="btn btn-primary btn-small">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aura AI Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
